@@ -1,9 +1,13 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<a href="">
-  <img src="assets/img/logo.png" width="64px" height="64px" style="margin-left: 32px;margin-bottom: 48px;background-color: #54a0b5">
-  <p style="margin-top: 32px ;display:inline-block ;font-size: 64px;-webkit-text-fill-color:#54a0b5 ">mt7ny</p>
-</a> 
-<hr>
+<div class="container-fluid" style="margin-top:16px;">
+  <a href="">
+    <img src="assets/img/logo.png" width="32px" height="32px" style="margin-left: 16px;margin-bottom: 12px;background-color: #54a0b5">
+    <p style="margin-top: 12px ;display:inline-block ;font-size: 32px;-webkit-text-fill-color:#54a0b5 ">mt7ny</p>
+  </a>
+  <i class="fa fa-user-circle" aria-hidden="true" routerLink="" id="profileIcon" title="My profile"></i>
+  <button class="btn btn-light" id="logOut">Log out</button>
+  <hr>
+</div>
 <br><br>
 <body>
   <div class="container">       
@@ -16,12 +20,12 @@
         <div class="container" (click)="pic.click()" id="ctr">
             <img src="{{imgUrl}}" id="image">
             <i *ngIf="imgUrl !== '../../assets/img/grey.png'" class="fa fa-cloud-upload" id="upload" aria-hidden="true"></i> 
-            <h2 *ngIf="imgUrl !== '../../assets/img/grey.png'" id="upload-title">Upload image</h2>   
+            <h2 *ngIf="imgUrl !== '../../assets/img/grey.png' && answer !== 'MCQ'" id="upload-title">Upload image</h2>   
         </div>
         <br>
         <textarea name="question" id="question" placeholder="question"></textarea>
         <br><br><br>
-        <form *ngIf= "answer === 'MCQ'">
+        <form *ngIf= "answer === 'MCQ'" id="mque">
           <h5>1- <input type="text"></h5>
           <h5>2- <input type="text"></h5>
           <h5>3- <input type="text"></h5>
@@ -40,7 +44,7 @@
         </button> 
         <br><br><br><br>
         <button class="btn btn-primary" style="margin-right:16px;">Add question</button>
-        <button class="btn btn-danger">Preview exam</button>
+        <button class="btn btn-danger" routerLink="/previewExam">Preview exam</button>
       </div>
     </div>
   </div>
