@@ -39,3 +39,11 @@
 #edit:hover {
     color: blue;
 }
+.radio-inline {
+    font-size: 28px;
+}
+input[type="radio"] {
+    transform: scale(2);
+    margin-right: 8px;
+    margin-left: 32px;
+}
