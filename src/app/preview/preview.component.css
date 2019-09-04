@@ -2,6 +2,10 @@
     float:right;
     margin-top: 20px;
 }
+.container-fluid {
+    width: 100%;
+    min-width: 700px;
+}
 #profileIcon {
     position: absolute;
     margin-top: 8px;
@@ -12,6 +16,7 @@
 }
 #image {
     max-width: 700px;
+    padding-right: 16px;
 }
 .rad {
     margin-right: 5px;
@@ -46,4 +51,24 @@ input[type="radio"] {
     transform: scale(2);
     margin-right: 8px;
     margin-left: 32px;
+}
+#drawing-area {
+    border-radius: 3px;
+    border-style: solid;
+    border-color: black;
+    max-width: 700px;
+    text-align: center;
+    display: block;
+    margin-left: 76px;
+}
+@media screen and (max-width: 725px) {
+    #main-cnt {
+        width: 716px;
+    }
+    #drawing-area {
+        margin-left: 0px;
+    }
+    #profileIcon {
+        display: none;
+    }
 }
