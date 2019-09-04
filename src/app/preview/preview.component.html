@@ -9,7 +9,7 @@
   <hr>
 </div>
 <br><br><br>
-<div class="container" style="max-width:900px">
+<div class="container" id="main-cnt" style="max-width:900px">
   <div class="row">
     <div class="col-md-12" style="text-align: center">
       <h1><b>Question #1</b></h1>
@@ -17,7 +17,7 @@
       <i class="fa fa-trash edit" aria-hidden="true" id="delete" title="Delete"></i>
       <i class="fa fa-pencil edit" aria-hidden="true" id="edit" title="Edit"></i>
       <br><br>
-      <h2><b>what is this picture?</b></h2>
+      <h2><b>what is this picture? you have to choose the correct answer as this is an exam so you have to choose the corect answers</b></h2>
       <div id="{{fname}}">
       <label class="radio-inline">
         <input [(ngModel)]="f[0]" type="radio" name="{{fname}}" value="1">Option1
@@ -43,7 +43,7 @@
       <i class="fa fa-pencil edit" aria-hidden="true" id="edit" title="Edit"></i>
       <br><br>
       <h2><b>what is this picture?</b></h2>
-      <textarea name="question" id="question" placeholder="question"></textarea>
+      <textarea name="question" id="question" placeholder="Answer"></textarea>
     </div>
   </div>
   <hr>
