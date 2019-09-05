@@ -60,5 +60,7 @@ export class PreviewComponent implements OnInit {
     this.signaturePad.set('penColor', 'rgb(66, 133, 244)');
     this.signaturePad.set('minWidth', 2);
   }
+  deleteExam() {
+  }
 }
 
