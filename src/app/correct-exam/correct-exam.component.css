@@ -41,17 +41,6 @@
     border-color: whitesmoke;
     min-height: 128px;
 }
-.edit {
-    margin-left: 16px;
-    font-size: 32px;
-    cursor: pointer;
-}
-#delete:hover {
-    color: red;
-}
-#edit:hover {
-    color: blue;
-}
 .radio-inline {
     font-size: 28px;
 }

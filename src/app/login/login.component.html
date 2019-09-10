@@ -7,13 +7,13 @@
     <div class="row">
       <div class="col-md-12" id="logIn-div">
           <h1 style="text-align: center;">تسجيل الدخول</h1>
-        <input placeholder="الايميل" id="loginEmail" class="loginIn">
+        <input placeholder="اسم المستخدم" id="loginEmail" class="loginIn">
         <input placeholder="كلمه المرور" id="loginPassword" class="loginIn" type="password">
-        <button type="button" class="btn btn-default" id="loginBtn" routerLink='/profile/ahmed'>Login</button>
+        <button type="button" class="btn btn-default" id="loginBtn" routerLink='/profile/ahmed'>تسجيل الدخول</button>
         <br> <br>
        <a href="" onclick="return false;" style="margin-top:48px;margin-bottom: 100px;text-align: left" (click)="forgetPassword()">نسيت كلمة السر ؟</a>
        <br>
-       <input *ngIf ="isShown" placeholder="Enter your email to send you new password" id="forgotEmail" class="loginIn">
+       <input *ngIf ="isShown" placeholder="الايميل" id="forgotEmail" class="loginIn">
        <button *ngIf ="isShown" type="button" class="btn btn-default" id="sendEmailBtn">ارسال</button>
      </div>
     </div>

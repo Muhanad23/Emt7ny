@@ -8,6 +8,11 @@ import { AddQuestionComponent } from './add-question/add-question.component';
 import { PreviewComponent } from './preview/preview.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SignaturePadModule } from 'angular2-signaturepad';
+import { EditComponent } from './edit/edit.component';
+import { EditProfileComponent } from './edit-profile/edit-profile.component';
+import { StudentExamComponent } from './student-exam/student-exam.component';
+import { CorrectionListComponent } from './correction-list/correction-list.component';
+import { CorrectExamComponent } from './correct-exam/correct-exam.component';
 
 
 @NgModule({
@@ -17,6 +22,11 @@ import { SignaturePadModule } from 'angular2-signaturepad';
     AddQuestionComponent,
     PreviewComponent,
     ProfileComponent,
+    EditComponent,
+    EditProfileComponent,
+    StudentExamComponent,
+    CorrectionListComponent,
+    CorrectExamComponent,
   ],
   imports: [
     BrowserModule,
