@@ -12,7 +12,7 @@ import { EditProfileComponent } from './edit-profile/edit-profile.component';
 import { StudentExamComponent } from './student-exam/student-exam.component';
 import { CorrectionListComponent } from './correction-list/correction-list.component';
 import { CorrectExamComponent } from './correct-exam/correct-exam.component';
-
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -30,6 +30,7 @@ import { CorrectExamComponent } from './correct-exam/correct-exam.component';
     BrowserModule,
     FormsModule,
     AppRoutingModule,
+    HttpClientModule,
     SignaturePadModule
   ],
   providers: [],
